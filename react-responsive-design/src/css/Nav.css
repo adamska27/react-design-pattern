@@ -1,39 +1,38 @@
-.nav,
+nav,
 .content {
   display: flex;
 }
-.nav a,
+nav a,
 .content > div {
   box-sizing: border-box;
-  padding: 0 2%;
+  padding: 0.2%;
   width: 33.33%;
 }
 
-@media screen and (max-width: 39.99em) {
-  .nav a {
+@media screen and (max-width: 39.99em){
+  nav a {
     border-bottom: 2px solid gray;
     color: black;
     display: inline-block;
     padding: 1em;
     text-align: center;
   }
-  .nav a.active {
+  nav a .active{
     border-bottom: 5px solid gray;
     font-weight: bold;
   }
-
-  .content-wrapper {
+  .content-wrapper{
     width: 100%;
     overflow: hidden;
   }
-  .content {
+  .content{
     padding: 0.5em 0;
     width: 300%;
   }
 }
 
-@media screen and (min-width: 40em) {
-  .nav {
+@media screen and (min-width: 40em){
+  nav {
     display: none;
   }
 }
