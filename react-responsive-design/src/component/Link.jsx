@@ -1,6 +1,6 @@
 import React from 'react';
 
 const Link = (props) =>
-  <a href={props.href} className={props.classname}>{props.content}</a>;
+  <a href={props.href} style={props.style} onClick={props.onclick}>{props.content}</a>;
 
 export default Link;

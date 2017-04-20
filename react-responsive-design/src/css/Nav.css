@@ -17,7 +17,7 @@ nav a,
     padding: 1em;
     text-align: center;
   }
-  nav a .active{
+  .active{
     border-bottom: 5px solid gray;
     font-weight: bold;
   }
