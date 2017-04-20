@@ -2,10 +2,10 @@ import React from 'react';
 import Link from './Link.jsx';
 
 const Nav = (props) =>
-  <nav onFocus={props.onfocus}>
-    <Link href="#col1" style={props.noActive} content="First" />
-    <Link href="#col2" style={props.noActive} content="Second"/>
-    <Link href="#col3" style={props.noActive} content="Third" />
+  <nav>
+    <Link href="#col1" content="First" onclick={props.onclick} classname={props.classname}/>
+    <Link href="#col2" content="Second" onclick={props.onclick} />
+    <Link href="#col3" content="Third" onclick={props.onclick} />
   </nav>;
 
 export default Nav;

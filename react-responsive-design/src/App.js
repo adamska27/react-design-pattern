@@ -6,25 +6,19 @@ import './css/Nav.css';
 
 
 class App extends Component {
-  state ={
-      active: {
-        borderBottom: "gray solid 5px",
-      },
-      noActive: {
-        borderBottom: "1px solid gray",
-      }
-  }
 
   activeLink = (event) => {
-    if (event.target.style.borderBottom = this.state.active.borderBottom) {
-
-    }
+  const activeClass = document.getElementsByClassName("active");
+  if (activeClass) {
+    activeClass[0].className = "";
+  }
+    event.target.className = "active"
   }
 
   render() {
     return (
       <div className="App">
-        <Nav noActive={this.state.noActive} onfocus={this.activeLink} />
+        <Nav onclick={this.activeLink} classname="active" />
 
         <div className="content-wrapper">
           <div className="content">
